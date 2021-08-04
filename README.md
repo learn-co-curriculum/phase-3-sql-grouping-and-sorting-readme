@@ -288,37 +288,13 @@ table has multiple entries for employees Abigail and Matthew.
 
 **`employee_bonus`**:
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Employee</th>
-    <th>Bonus</th>
-  </tr>
-  
-  <tr>
-    <td>Matthew</td>
-    <td>1000</td>
-  </tr>
-
-  <tr>
-    <td>Abigail</td>
-    <td>2000</td>
-  </tr>
-
-  <tr>
-    <td>Matthew</td>
-    <td>500</td>
-  </tr>
-
-  <tr>
-    <td>Tom</td>
-    <td>700</td>
-  </tr>
-
-  <tr>
-    <td>Abigail</td>
-    <td>1250</td>
-  </tr>
-</table>
+| Employee | Bonus |
+| --- | --- |
+| Matthew | 1000 |
+| Abigail | 2000 |
+| Matthew | 500 |
+| Tom | 700 |
+| Abigail | 1250 |
 
 To calculate the total bonus that each employee received, we would write a SQL
 statement like this:  
