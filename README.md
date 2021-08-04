@@ -175,7 +175,7 @@ SELECT * FROM cats ORDER BY(net_worth) DESC LIMIT 1;
 
 Which will return:
 
-```text
+```bash
 name             age         breed          net_worth
 ---------------  ----------  -------------  ----------
 Lil\' Bub        2           Tortoiseshell  2000000
@@ -216,7 +216,7 @@ GROUP BY owners.name;
 
 This should return:
 
-```text
+```bash
 owners.name      SUM(cats.net_worth)
 ---------------  -------------------
 Penny            2000000
@@ -230,7 +230,7 @@ In the above query, we've implemented _two_ joins. First, we're joining `owners`
 and `cat_owners` on `owners.id = cats_owners.owner_id`. This first joined table
 would look like the following if we were to query it:
 
-```text
+```bash
 owners.id  owners.name      cat_owners.cat_id  cat_owners.owner_id
 ---------  -----------      -----------------  -------------------
 2          Sophie           2                  2
@@ -249,7 +249,7 @@ in conjunction with `GROUP BY` to get the information we want. Without `GROUP BY
 only the first owner in the table would be returned, along with the sum of the
 net worth of _all_ the cats:
 
-```text
+```bash
 owners.name      SUM(cats.net_worth)
 ---------------  -------------------
 Sophie           3021800
@@ -259,7 +259,7 @@ If, on the other hand, we forget to use `SUM` and just get `cats.net_worth`,
 the results will be grouped by owner, but only the net worth of the _first_
 cat belonging to each owner will be returned, not the aggregate:
 
-```text
+```bash
 owners.name      cats.net_worth
 ---------------  ---------------
 Penny            2000000
@@ -271,7 +271,7 @@ the `net_worth` column of the `cats` table (or whichever column you specify in
 parentheses) and takes the sum of those values, but only _after those cats have
 been grouped by owner_:
 
-```text
+```bash
 owners.name      SUM(cats.net_worth)
 ---------------  -------------------
 Penny            2000000
@@ -305,7 +305,7 @@ SELECT employee, SUM(bonus) FROM employee_bonus GROUP BY employee;
 
 This should return:  
 
-```text
+```bash
 employee         SUM(bonus)
 ---------------  -------------------
 Abigail          3250
