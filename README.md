@@ -385,7 +385,4 @@ LIMIT
 ## Resources
 
 - [`ORDER BY` vs `GROUP BY` clauses](https://www.geeksforgeeks.org/difference-between-order-by-and-group-by-clause-in-sql/)
-
 - [`HAVING` vs `WHERE` clauses](https://www.essentialsql.com/what-is-the-difference-between-where-and-having-clauses/)
-
-- [Video Review- SQL Joins Overview](https://www.youtube.com/watch?v=qfB1MRnzk4g)
